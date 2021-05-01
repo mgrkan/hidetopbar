@@ -130,7 +130,7 @@ var Intellihide = class HideTopBar_Intellihide {
     }
 
     enable() {
-        this._isEnabled = true;
+        this._isEnabled = false;
         this._status = OverlapStatus.UNDEFINED;
         global.get_window_actors().forEach(function(wa) {
             this._addWindowSignals(wa);
